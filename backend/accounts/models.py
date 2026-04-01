@@ -1,5 +1,5 @@
 from django.db import models
-from django.db import AbstractUser
+from django.contrib.auth.models import AbstractUser
 
 class User(AbstractUser):
   avatar = models.URLField(blank=True, null=True)
